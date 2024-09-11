@@ -171,7 +171,7 @@ img.close-icon {
 .scroll-button {
   border: none;
   position: absolute;
-  bottom: 30px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   padding: 30px 20px;
@@ -217,13 +217,12 @@ img.close-icon {
 
   .scroll-button {
     padding: 20px;
-    bottom: 20px;
+    bottom: -20px;
     transform: translateX(-50%);
   }
 }
 
 /* first section */
-
 .section {
   background-color: #ffffff;
   color: #252525;
@@ -248,7 +247,6 @@ img.close-icon {
 .left-content,
 .right-content {
   flex: 1;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,7 +263,7 @@ img.close-icon {
 }
 
 .section h2 {
-  font-size: 4.5vw;
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Increased size */
   font-family: "Raleway", serif;
   font-weight: 500;
   margin-bottom: 5px;
@@ -274,7 +272,7 @@ img.close-icon {
 
 .section h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem); /* Increased size */
   font-weight: 500;
   margin-bottom: 5px;
   color: #357abe;
@@ -283,14 +281,15 @@ img.close-icon {
 .section p {
   font-weight: 500;
   font-family: "Raleway", sans-serif;
-  font-size: 1.8vw;
-  line-height: 1.4;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Increased size */
+  line-height: 1.5;
   color: #333;
   margin: 5px 0;
 }
 
 .section p b {
   font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Increased size */
   color: #252525;
 }
 
@@ -309,9 +308,6 @@ img.close-icon {
 
   .right-content {
     text-align: center;
-  }
-  .section p {
-    font-size: 18px;
   }
 }
 

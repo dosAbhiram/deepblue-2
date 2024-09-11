@@ -61,6 +61,11 @@
   font-size: 18px;
   color: #4f7097;
 }
+.section-divider {
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.634);
+  width: 1px;
+}
 @media (max-width: 768px) {
   .container h1 {
     font-size: 36px;

@@ -47,7 +47,6 @@ function Section2() {
           className="section-divider"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          style={{ height: "75vh", backgroundColor: "black", width: "1px" }}
           transition={{ delay: 0.5, duration: 0.5, ease: "linear" }}
         ></motion.div>
 
@@ -83,7 +82,6 @@ function Section2() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          style={{ height: "75vh", backgroundColor: "black", width: "1px" }}
           transition={{ delay: 1.5, duration: 0.5, ease: "linear" }}
           className="section-divider"
         ></motion.div>

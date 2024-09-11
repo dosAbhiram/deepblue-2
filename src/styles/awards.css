@@ -44,6 +44,9 @@
   font-size: 16px;
   color: #4f7097;
 }
+.award img {
+  border: none;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
