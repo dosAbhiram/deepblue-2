@@ -1,0 +1,71 @@
+.client-container {
+  background-image: url("/backgroundImage.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.client-container p {
+  color: rgba(255, 255, 255, 0.793);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 30px 30px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.insideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.row1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.row1 img {
+  width: 20vw;
+  object-fit: cover;
+}
+
+.smallDiv {
+  display: none;
+  height: 1px;
+  width: 100vw;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .client-container {
+    background-image: none;
+    background-color: #5f6167;
+  }
+
+  .row1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .row1 img {
+    width: 316px;
+    height: 316px;
+  }
+
+  .smallDiv {
+    display: flex;
+  }
+}

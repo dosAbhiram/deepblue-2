@@ -1,0 +1,31 @@
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: #3f4247;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.map-container a {
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    flex-direction: column;
+  }
+
+  img {
+    margin-bottom: 10px;
+  }
+}

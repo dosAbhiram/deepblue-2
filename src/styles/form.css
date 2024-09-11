@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.form-container {
+  font-family: "Raleway", sans-serif;
+  background-color: #3f4247;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.form-container h1 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"][placeholder="Please describe your project*"] {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 100%;
+    max-width: none;
+  }
+}

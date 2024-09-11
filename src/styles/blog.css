@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.blog-container {
+  font-size: "Raleway";
+}
+.blog-title {
+  height: 111px;
+  color: #275a8a;
+  background-color: #eef1f6;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 30px 93px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+.blog div {
+  font-family: "Raleway", sans-serif;
+  margin: 0px 93px;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 200px;
+}
+.blog h3 {
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  color: #275a8a;
+  font-weight: 500;
+}
+.blog h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #393939;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.blog p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #929aa7;
+}
+
+.blog {
+  transition: 0.3s ease-in;
+}
+
+.blog:hover {
+  background-color: #275a8a;
+  h3 {
+    color: white;
+  }
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .blog h1 {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .blog h3 {
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .blog p {
+    font-size: 12px;
+  }
+}
