@@ -1,30 +1,19 @@
-import Background from "./components/background";
-import Section from "./components/section";
-import ParallaxSection from "./components/parallax-section1";
-import Section2 from "./components/section2";
-import Clients from "./components/client-section";
-import AwardSection from "./components/award-section";
-import ParallaxSection2 from "./components/parallax-section-2";
-import BlogSection from "./components/blog-section";
-import FormSection from "./components/form-section";
-import Map from "./components/map";
-import Footer from "./components/footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/About";
+import Work from "./pages/work";
+import IntelCaseStudy from "./pages/caseStudies/intel";
 
 function App() {
   return (
-    <>
-      <Background />
-      <Section />
-      <ParallaxSection />
-      <Section2 />
-      <Clients />
-      <AwardSection />
-      <ParallaxSection2 />
-      <BlogSection />
-      <FormSection />
-      <Map />
-      <Footer />
-    </>
+    <Router basename="/deepblue-2">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/work/intel" element={<IntelCaseStudy />} />
+      </Routes>
+    </Router>
   );
 }
 

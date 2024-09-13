@@ -1,3 +1,4 @@
+import "../styles/index.css";
 function ParallaxSection2() {
   return (
     <section className="parallax-section-2">

@@ -6,6 +6,8 @@ import DOTS from "vanta/dist/vanta.dots.min";
 import TRUNK from "vanta/dist/vanta.trunk.min";
 import Header from "./header";
 import p5 from "p5";
+import "../styles/index.css";
+
 function Background() {
   const vantaRef = useRef(null);
   const animationInstance = useRef(null);

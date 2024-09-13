@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-.container {
+.Container {
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   background-color: #eef1f6;
   padding: 30px;
 }
-.container h1 {
+.Container h1 {
   color: #414141;
   font-size: 52px;
   font-family: "Raleway", sans-serif;
@@ -67,7 +67,7 @@
   width: 1px;
 }
 @media (max-width: 768px) {
-  .container h1 {
+  .Container h1 {
     font-size: 36px;
     height: auto;
     margin-bottom: 40px;

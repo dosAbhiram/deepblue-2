@@ -6,7 +6,7 @@ function Section2() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   return (
-    <div ref={ref} className="container">
+    <div ref={ref} className="Container">
       <motion.h1
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}

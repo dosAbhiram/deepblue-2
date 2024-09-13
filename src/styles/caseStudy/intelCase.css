@@ -1,0 +1,14 @@
+.intelCaseStudy {
+  background-image: url("caseStudies/intel/intel-caseStudy.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.intelCaseStudy2 {
+  background-image: url("caseStudies/intel/1_objects_92.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}

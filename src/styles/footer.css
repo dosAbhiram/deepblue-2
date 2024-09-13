@@ -16,7 +16,7 @@
 .footer-section {
   flex: 1;
   margin: 0 20px;
-  text-align: left; /* Ensure left-alignment for larger screens */
+  text-align: left;
 }
 
 .footer-section h4 {
